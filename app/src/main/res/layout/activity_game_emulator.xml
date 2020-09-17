@@ -1,115 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".GameEmulatorActivity">
+<LinearLayout
     android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+    <Button
+        android:id="@+id/button_00"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp">
+    </Button>
+    <Button
+        android:id="@+id/button_01"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp">
+    </Button>
+    <Button
+        android:id="@+id/button_02"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp">
+    </Button>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+    <Button
+        android:id="@+id/button_10"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp">
+    </Button>
+    <Button
+        android:id="@+id/button_11"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp">
+    </Button>
+    <Button
+        android:id="@+id/button_12"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp" >
+    </Button>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" >
+    <Button
+        android:id="@+id/button_20"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp" >
+    </Button>
+    <Button
+        android:id="@+id/button_21"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp" >
+    </Button>
+    <Button
+        android:id="@+id/button_22"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="60sp" >
+    </Button>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_gravity="center">
+
+    <TextView
+    android:id="@+id/game_display"
+    android:layout_width="424dp"
     android:layout_height="match_parent"
-    tools:context=".GameEmulatorActivity">
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginEnd="122dp"
+    android:layout_marginRight="122dp"
+    android:gravity="center"
+    android:text="@string/player_1"
+    android:textSize="30sp"
+    android:freezesText="true"/>
 
-    <TextView
-        android:id="@+id/player1"
-        android:layout_width="124dp"
-        android:layout_height="36dp"
-        android:text="@string/player_1"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+</LinearLayout>
 
-    <TextView
-        android:id="@+id/player2"
-        android:layout_width="123dp"
-        android:layout_height="34dp"
-        android:text="@string/player_2"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player1"
-        app:layout_constraintVertical_bias="0.061" />
-
-    <TextView
-        android:id="@+id/player1WinsDisplay"
-        android:layout_width="170dp"
-        android:layout_height="39dp"
-        android:text="@string/player_1_wins"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.066"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player2"
-        app:layout_constraintVertical_bias="0.064" />
-
-    <TextView
-        android:id="@+id/player2WinsDisplay"
-        android:layout_width="177dp"
-        android:layout_height="43dp"
-        android:text="@string/player_2_wins"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player1WinsDisplay"
-        app:layout_constraintVertical_bias="0.103" />
-
-    <TextView
-        android:id="@+id/tieDisplay"
-        android:layout_width="173dp"
-        android:layout_height="36dp"
-        android:text="@string/player_ties"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/player2WinsDisplay"
-        app:layout_constraintVertical_bias="0.134" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
 
     <Button
-        android:id="@+id/btn_player1Wins"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.809"
-        app:layout_constraintStart_toEndOf="@+id/player1WinsDisplay"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273" />
-
-    <Button
-        android:id="@+id/btn_player2Wins"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
-        app:layout_constraintStart_toEndOf="@+id/player2WinsDisplay"
-        app:layout_constraintTop_toBottomOf="@+id/btn_player1Wins"
-        app:layout_constraintVertical_bias="0.087" />
-
-    <Button
-        android:id="@+id/btn_ties"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.916"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_player2Wins"
-        app:layout_constraintVertical_bias="0.127" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:id="@+id/button_new_game"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:text="New Game"
+        android:textSize="30sp"
+        android:freezesText="true"/>
+</LinearLayout>
+</LinearLayout>
