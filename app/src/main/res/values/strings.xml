@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Main Menu A.L.</string>
+    <string name="name">name</string>
+    <string name="name_text">Name</string>
+    <string name="btn_delete">Delete Name</string>
+    <string name="btn_add">Add Name</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="player_1_wins">Player 1 wins</string>
+    <string name="player_2_wins">Player 2 wins</string>
+    <string name="player_ties">Players tie</string>
+    <string name="board_player">Player</string>
+    <string name="board_wins">Wins</string>
+    <string name="board_losses">Losses</string>
+    <string name="board_ties">Ties</string>
+</resources>
